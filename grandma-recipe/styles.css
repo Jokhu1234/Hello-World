@@ -1,39 +1,53 @@
 body {
-    background-color:lightgoldenrodyellow;
-    font-family: Arial, Arial, Helvetica, sans-serif;
-   
-}
-
-footer {
-    background-color: cadetblue;
+    font-family: "Arial", sans-serif;
+    background-color: #fffbea;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #79a3b1;
     color: white;
+    padding: 20px 0;
     text-align: center;
-    padding-top: 10px;
-}
-
-header {
-    text-align: center;
-    font-size: x-large;
-    padding-bottom: 20px;
-    background-color:cadetblue;
-    color: white;
-}
-
-
-h1,
-h2 {
-    border-radius: 20px;
-    
-}
-
-section {
-    border-radius: 10px;
-    margin: 20px;
-}
-#main,
-#ingredients,
-#instructions {
-    border-radius: 10px;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  main {
+    width: 80%;
+    margin: 20px auto;
+  }
+  
+  .introduction,
+  .ingredients,
+  .instructions {
+    background-color: #f8f8f8;
+    margin-bottom: 20px;
     padding: 15px;
-    background-color: white;
-}
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .ingredients h2,
+  .instructions h2 {
+    color: #b3568f;
+  }
+  
+  ul,
+  ol {
+    margin-left: 20px;
+  }
+  
+  footer {
+    text-align: center;
+    background-color: #79a3b1;
+    color: white;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
