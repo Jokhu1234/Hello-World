@@ -10,9 +10,9 @@ body {
 header {
     background-image: url('/Landing-Page/background.jpg');
     color: white;
-    padding: 50px 20px;
     background-size: cover;
-    background-position: center
+    padding: 50px 20px;
+    background-position: center;
 
 }
 
@@ -26,6 +26,7 @@ header p {
     font-size: 1.2rem;
     margin-bottom: 30px;
 }
+
 .button {
     padding: 10px 20px;
     background-color: #007bff;
