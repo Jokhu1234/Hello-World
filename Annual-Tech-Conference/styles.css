@@ -4,17 +4,17 @@ body {
     padding: 50px;
     background-color: #add8e554;
 }
-article {
+header {
     margin: 20px;
 }
 
-article h2 {
+header h2 {
     color: #333333;
     text-align:center;
     margin-bottom: 10px;
 }
 
-article p {
+header p {
     color:#333333;
     text-align: center;
 }
@@ -25,7 +25,7 @@ main {
     padding: 20px;
     border-radius: 10px;
 }
-button {
+.button {
     background-color: #4eaf4e;
     border: none;
     color: white;
