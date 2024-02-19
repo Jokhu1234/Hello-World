@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam</title>
+    <link rel="stylesheet" href="/Form/styles.css" />
+</head>
+<body>
+    <header><b>Exam 101</b></header>
+    <div class="container">
+<h2>
+    <form action="/action_page.php">
+        <label for="name">Name:</label>
+        <input type="text" id="name">
+        <label for="date">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date:</label>
+        <input type="date" id="date"><br><br>
+        <label for="email">Email Address:</label>
+        <input type="email" id="email"  name="email">
+        <input type="button" onclick="alert('Email Submitted!')" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+</h2>
+
+    <p>
+        <br>
+        <form action="/action_page.php">
+        <label for="question1">1. Very generically, what are div and span used for in HTML?</label><br /><br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<textarea id="question1" name="question1" rows="6" cols="50"></textarea>
+        <br><br>
+        </form>
+    
+    <form action="/action_page.php">
+        <label for="question2">2. Which two are semantic elements?</label><br>
+           <br>
+            
+            <input type="radio" id="span" name="span" value="span">
+            <label for="span">span</label><br>
+            <input type="radio" id="table" name="table" value="table">
+            <label for="table">table</label><br>
+            <input type="radio" id="article" name="article" value="article">
+            <label for="article">article</label><br>
+            <input type="radio" id="div" name="div" value="div">
+            <label for="div">div</label>    
+        </form>
+     
+        <br>
+        <p>
+        <form action="/action_page.php">
+        <label for="question3">3. In an ordered list, the list items will be marked with numbers by default.</label>
+        <label for="question3">True or False?</label>
+        <br><br>
+        &nbsp; &nbsp; &nbsp;<select id="question3"  name="question3list" form="question3form">
+            <option value="true">True</option>
+            <option value="false">False</option>
+        </select>
+    </form>
+
+        <br><br>
+        <form>
+            4. Which of the below are considered block-level elements in HTML? Check all that apply.<br><br>
+            &nbsp;&nbsp;&nbsp;<input type="checkbox" id="address" name="address" value="address">
+            <label for="address">address</label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" id="button" name="button" value="button">
+            <label for="button">button</label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" id="aside" name="aside" value="aside">
+            <label for="aside">aside</label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" id="abbr" name="abbr" value="abbr">
+            <label for="abbr">abbr</label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" id="blockquote" name="blockquote" value="blockquote">
+            <label for="blockquote">blockquote</label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" id="label" name="label" value="label">
+            <label for="label">label</label>
+        </form>
+   </p>
+</div>
+</header>   
+</body>
+</html>
