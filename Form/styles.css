@@ -13,11 +13,13 @@ h2 {
     font-size: 16pt;
 
 }
-div {
-    text-align: left;
+.date {
+    text-align: right;
 }
 
-
+.name {
+    text-align: left;
+}
 p {
     font-size:14pt;
 

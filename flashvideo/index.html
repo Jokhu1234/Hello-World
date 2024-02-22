@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+   <video id="myvideo" width="600" height="400" poster="/flashvideo/puppy.jpg" controls muted>
+    <source src="puppy.mp4" type="video/mp4">
+    <audio id="myaudio" controls>
+    <source src="happydog.mp3" type="audio/mpeg">
+    Your browser does not support HTML video.
+    </audio>
+   </video>
+   <script>
+    var myvideo = document.getElementById("myvideo");
+    var myaudio = document.getElementById("myaudio");
+    myvideo.onplay  = function() { myaudio.play();  }
+    myvideo.onpause = function() { myaudio.pause(); }
+    </script>
+             
+</body>
+</html>
