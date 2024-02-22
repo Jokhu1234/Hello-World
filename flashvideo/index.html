@@ -6,19 +6,45 @@
     <title>Document</title>
 </head>
 <body>
-    
-   <video id="myvideo" width="600" height="400" poster="/flashvideo/puppy.jpg" controls muted>
-    <source src="puppy.mp4" type="video/mp4">
-    <audio id="myaudio" controls>
-    <source src="happydog.mp3" type="audio/mpeg">
-    Your browser does not support HTML video.
+    <div style="text-align:center"> 
+        <button onclick="playPause()">Play/Pause</button> 
+        <button onclick="makeBig()">Big</button>
+        <button onclick="makeSmall()">Small</button>
+        <button onclick="makeNormal()">Normal</button>
+        <br><br>
+        <video id="myvideo" width="600" height="400" poster="/flashvideo/puppy.jpg" controls muted>
+            <source src="puppy.mp4" type="video/mp4">
+            <audio id="myaudio" controls>
+            <source src="happydog.mp3" type="audio/mpeg">
+            Your browser does not support HTML video.
     </audio>
    </video>
+   </div>
+
    <script>
     var myvideo = document.getElementById("myvideo");
     var myaudio = document.getElementById("myaudio");
     myvideo.onplay  = function() { myaudio.play();  }
     myvideo.onpause = function() { myaudio.pause(); }
+
+    function playPause() { 
+  if (myVideo.paused) 
+    myVideo.play(); 
+  else 
+    myVideo.pause(); 
+} 
+
+function makeBig() { 
+    myVideo.width = 560; 
+} 
+
+function makeSmall() { 
+    myVideo.width = 320; 
+} 
+
+function makeNormal() { 
+    myVideo.width = 420; 
+}  
     </script>
              
 </body>
