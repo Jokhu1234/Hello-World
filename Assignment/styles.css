@@ -15,6 +15,10 @@ h2 {
 
 }
 
+#feedback {
+  width:755px;
+  padding: 10px;
+}
 p {
   font-size:14pt;
 }
