@@ -13,8 +13,32 @@ nav {
     background-color: #333;
 }
 
-.a {
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    overflow: hidden;
+    background-color: #333;
+}
+
+nav {
+    display: block;
+
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
     color: white;
+    text-decoration: none;
+    padding: 10px;
+    text-align: right;
+    font-size: 12px;
+   
 }
 .product {
     margin: 10px;
@@ -47,9 +71,6 @@ nav {
     background-color: green;
 }
    
-.a {
-    color: white;
-}
 
 h1 {
     background-color: #333;
@@ -67,7 +88,7 @@ h3 {
 
 footer {
     background-color: #333;
-    padding: 10px 0;
+    padding: 5px;
     color: white;
     text-align: center;
     font-size: 12px;
