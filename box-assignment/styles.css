@@ -1,0 +1,16 @@
+body {
+    background-color: #333;
+}
+
+.square {
+    height: 100px;
+    width: 100px;
+    background-color: white;
+}
+
+.circle {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: white;
+}
