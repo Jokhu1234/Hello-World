@@ -28,7 +28,7 @@ section nav {
 section nav .logo img {
     width: 200px;
     cursor: pointer;
-    margin: 7px 0;
+    margin: 10px 0 10px 0;
 }
 
 section nav ul {
@@ -37,7 +37,7 @@ section nav ul {
 
 section nav ul li {
     display: inline-block;
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 section nav ul li a {
@@ -65,17 +65,6 @@ section nav ul li a:hover {
     color: hsl(43, 89%, 57%);
 }
 
-section nav .icon i {
-    font-size: 18px;
-    color: #000;
-    margin: 0 5px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-section nav .icon i:hover {
-    color:hsl(43, 89%, 57%);
-}
 
 section .main {
     display: flex;
@@ -515,11 +504,15 @@ footer .footer_main .footer_tag {
 footer .footer_main .footer_tag h2 {
     color: #000;
     margin-bottom: 25px;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 footer .footer_main .footer_tag p {
     margin: 10px;
+}
+
+.footer_tag a {
+    text-decoration: none;
 }
 
 footer .footer_main .footer_tag i {
@@ -557,3 +550,23 @@ footer .end span {
     background: hsl(43, 89%, 57%);
     border-radius: 15px;
 }
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    /* Navigation */
+    nav {
+        flex-direction: column;
+    }
+
+    /* Menu and Review */
+    .menu_box, .review_box {
+        grid-template-columns: 1fr;
+    }
+
+    /* Order */
+    .order_main {
+        grid-template-columns: 1fr;
+    }
+}
+ 
+   
