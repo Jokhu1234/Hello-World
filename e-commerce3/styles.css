@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
+
 html {
     scroll-behavior: smooth;
 }
@@ -15,37 +16,41 @@ section {
 
 section nav {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-around;
+    align-items:f center;
     position: fixed;
     right: 0;
     left: 0;
     background: hsl(108, 87%, 19%);
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    box-shadow: 0 20px 20px rgba(0,0,0,0.5);
     z-index: 1000;
 }
 
 section nav .logo img {
-    width: 70px;
+    width: 150px;
     cursor: pointer;
-    margin: 10px 0;
+    margin: 0 10px;
+
 }
 
 section nav ul {
     list-style: none;
+    
 }
 
 section nav ul li {
     display: inline-block;
-    margin: 0 20px;
+    margin: 20px 20px;
+
 }
 
 section nav ul li a {
     text-decoration: none;
     color: white;
     font-weight: 500;
-    font-size: 17px;
+    font-size: 20px;
     transition: 0.1s;
+
 }
 
 section nav ul li a:hover::after {
@@ -53,7 +58,7 @@ section nav ul li a:hover::after {
 }
 
 section nav ul li a:hover {
-    color: white;
+    color: hsl(108, 86%, 32%);
 }
 
 
@@ -62,13 +67,12 @@ section .main {
     align-items: center;
     justify-content: space-around;
     position: relative;
-    top: 130px;
+    top: 100px;
 }
 
 section .main .men_text h1 {
     font-size: 60px;
     position: relative;
-    top: -90px;
     left: 20px;
     
 }
@@ -88,12 +92,11 @@ section .main .main_image img {
 }
 
 .main_image img {
-    border-radius: 100%;
+    border-radius: 50%;
     object-fit: cover;
     object-position: center;
-    border-radius: 50%;
     border: 5px solid #cccccc;
-    top: 40px; 
+    top: 30px; 
 }
 
 section p {
@@ -144,25 +147,9 @@ section .main_btn:hover i {
     align-items: center;
     justify-content: center;
     margin-bottom:  30px;
-}
-
-.menu h1 span {
     color: hsl(108, 87%, 19%);
     margin-left: 15px;
-    font-family: mv boli;
-
 }
-
-.menu h1 span::after {
-    content: '';
-    width: 100%;
-    height: 2px;
-    background: hsl(108, 87%, 19%);
-    display: block;
-    position: relative;
-    bottom: 15px;
-
-} 
 
 .menu .menu_box {
     width: 95%;
@@ -170,7 +157,6 @@ section .main_btn:hover i {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 15px;
-
 }
 
 .menu .menu_box .menu_card {
@@ -279,7 +265,7 @@ section .main_btn:hover i {
 .review {
     width: 100%;
     height: 100vh;
-    padding: 70px 0;
+    padding: 50px 0;
 }
 
 .review h1 {
@@ -289,20 +275,9 @@ section .main_btn:hover i {
     justify-content: center;
 }
 
-.review h1 span {
+.review h1 {
     margin-left: 15px;
     color: hsl(108, 87%, 19%);
-    font-family: mv boli;
-}
-
-.review h1 span::after {
-    content: '';
-    width: 100%;
-    height: 2px;
-    background: hsl(108, 87%, 19%);
-    position: relative;
-    bottom: 15px;
-    display: block;
 }
 
 .review .review_box {
@@ -404,21 +379,11 @@ section .main_btn:hover i {
     font-size: 55px;
 }
 
-.order h1 span {
+.order h1 {
     color: hsl(108, 87%, 19%);
     margin-right: 15px;
-    font-family: mv boli;
 }
 
-.order h1 span::after {
-    content: '';
-    width: 100%;
-    height: 2px;
-    background: hsl(108, 87%, 19%);
-    display: block;
-    position: relative;
-    bottom: 15px; 
-}
 
 .order .order_main {
     display: flex;
@@ -444,8 +409,6 @@ section .main_btn:hover i {
 
 .order .order_main form .input {
     margin: 5px;
-
-
 }
 
 .order .order_main form .input input {
