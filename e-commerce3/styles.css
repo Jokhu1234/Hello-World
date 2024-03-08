@@ -15,20 +15,20 @@ section {
 
 section nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     position: fixed;
     right: 0;
     left: 0;
-    background: white;
+    background: hsl(108, 87%, 19%);
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     z-index: 1000;
 }
 
 section nav .logo img {
-    width: 200px;
+    width: 70px;
     cursor: pointer;
-    margin: 10px 0 10px 0;
+    margin: 10px 0;
 }
 
 section nav ul {
@@ -42,19 +42,10 @@ section nav ul li {
 
 section nav ul li a {
     text-decoration: none;
-    color:#000;
+    color: white;
     font-weight: 500;
     font-size: 17px;
     transition: 0.1s;
-}
-
-section nav ul li a::after {
-    content: '';
-    width: 100%;
-    height: 2px;
-    background: hsl(43, 89%, 57%);
-    display: block;
-    transition: 0.2s linear;
 }
 
 section nav ul li a:hover::after {
@@ -62,7 +53,7 @@ section nav ul li a:hover::after {
 }
 
 section nav ul li a:hover {
-    color: hsl(43, 89%, 57%);
+    color: white;
 }
 
 
@@ -84,7 +75,7 @@ section .main .men_text h1 {
 
 section .main .men_text h1 span {
     margin-left: 15px;
-    color: hsl(43, 89%, 57%);
+    color: hsl(108, 87%, 19%);
     font-family: mv boli;
     line-height: 22px;
     font-size: 70;
@@ -102,8 +93,7 @@ section .main .main_image img {
     object-position: center;
     border-radius: 50%;
     border: 5px solid #cccccc;
-    top: 40px;
-    
+    top: 40px; 
 }
 
 section p {
@@ -116,7 +106,7 @@ section p {
 }
 
 section .main_btn {
-    background: hsl(43, 89%, 57%);
+    background: hsl(108, 87%, 19%);
     position: relative;
     left: 123px;
     bottom: 30px;
@@ -157,7 +147,7 @@ section .main_btn:hover i {
 }
 
 .menu h1 span {
-    color: hsl(43, 89%, 57%);
+    color: hsl(108, 87%, 19%);
     margin-left: 15px;
     font-family: mv boli;
 
@@ -167,7 +157,7 @@ section .main_btn:hover i {
     content: '';
     width: 100%;
     height: 2px;
-    background: hsl(43, 89%, 57%);
+    background: hsl(108, 87%, 19%);
     display: block;
     position: relative;
     bottom: 15px;
@@ -204,8 +194,6 @@ section .main_btn:hover i {
     object-fit: cover;
     object-position: center;
     transition: 0.3s;
-
-
 }
 
 .menu .menu_box .menu_card .menu_image:hover img {
@@ -237,14 +225,14 @@ section .main_btn:hover i {
     align-items: center;
     justify-content: center;
     line-height: 50px;
-    color: #830c0c;
+    color: hsl(108, 87%, 19%);
     cursor: pointer;
     text-shadow: 0 0 6px #000;
     transition: 0.2s;
 }
 
 .menu .menu_box .menu_card .small_card i:hover {
-    color: hsl(43, 89%, 57%);
+    color: hsl(108, 87%, 19%);
 } 
 
 .menu .menu_box .menu_card .menu_info h2 {
@@ -268,7 +256,7 @@ section .main_btn:hover i {
 }
 
 .menu .menu_box .menu_card .menu_info .menu_icon {
-    color: hsl(43, 89%, 57%);
+    color: hsl(108, 87%, 19%);
     text-align: center;
     margin: 10px 0 20px 0;
 }
@@ -279,50 +267,51 @@ section .main_btn:hover i {
     justify-content: center;
     text-decoration: none;
     color: white;
-    background: #000;
+    background: hsl(108, 87%, 19%);;
     padding: 8px 10px;
     margin: 0 80px;
+    border-radius: 10px;
     transition: 0.3s;
 }
 
-/*Review*/
+/*Reviews*/
 
-.review{
+.review {
     width: 100%;
     height: 100vh;
     padding: 70px 0;
 }
 
-.review h1{
+.review h1 {
     font-size: 55px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.review h1 span{
+.review h1 span {
     margin-left: 15px;
-    color: #fac031;
+    color: hsl(108, 87%, 19%);
     font-family: mv boli;
 }
 
-.review h1 span::after{
+.review h1 span::after {
     content: '';
     width: 100%;
     height: 2px;
-    background: #fac031;
+    background: hsl(108, 87%, 19%);
     position: relative;
     bottom: 15px;
     display: block;
 }
 
-.review .review_box{
+.review .review_box {
     width: 95%;
     margin: 70px auto;
     display: flex;
 }
 
-.review .review_box .review_card{
+.review .review_box .review_card {
     width: 350px;
     height: 535px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.5);
@@ -331,7 +320,7 @@ section .main_btn:hover i {
     margin: 0 8px;
 }
 
-.review .review_box .review_card .review_profile{
+.review .review_box .review_card .review_profile {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -339,11 +328,11 @@ section .main_btn:hover i {
     transition: 0.3s;
 }
 
-.review .review_box .review_card:hover .review_profile{
+.review .review_box .review_card:hover .review_profile {
     transform: translateY(-60px);
 }
 
-.review .review_box .review_card .review_profile img{
+.review .review_box .review_card .review_profile img {
     width: 180px;
     height: 180px;
     object-fit: cover;
@@ -352,21 +341,21 @@ section .main_btn:hover i {
     border: 5px solid #cccccc;
 }
 
-.review .review_box .review_card .review_text{
+.review .review_box .review_card .review_text {
     text-align: center;
 }
 
-.review .review_box .review_card .review_text .name{
+.review .review_box .review_card .review_text .name {
     color: #000;
     transition: 0.3s;
 }
 
-.review .review_box .review_card:hover .review_text .name{
+.review .review_box .review_card:hover .review_text .name {
     transform: translateY(-50px);
 }
 
-.review .review_box .review_card .review_text .review_icon{
-    color: #fac031;
+.review .review_box .review_card .review_text .review_icon {
+    color: hsl(108, 87%, 19%);
     transition: 0.3s;
 }
 
@@ -374,7 +363,7 @@ section .main_btn:hover i {
     transform: translateY(-30px);
 }
 
-.review .review_box .review_card .review_text .review_social i{
+.review .review_box .review_card .review_text .review_social i {
     margin: 5px 1px;
     font-size: 15px;
     opacity: 0;
@@ -382,18 +371,18 @@ section .main_btn:hover i {
     transition: 0.3s;
 }
 
-.review .review_box .review_card:hover .review_text .review_social i{
+.review .review_box .review_card:hover .review_text .review_social i {
     opacity: 1;
     transform: translateY(-8px);
 }
 
-.review .review_box .review_card .review_text p{
+.review .review_box .review_card .review_text p {
     text-align: center;
     line-height: 22px;
     transition: 0.3s;
 }
 
-.review .review_box .review_card:hover .review_text p{
+.review .review_box .review_card:hover .review_text p {
     margin-top: 5px;
 }
 
@@ -405,9 +394,6 @@ section .main_btn:hover i {
     width: 100%;
     height: 100vh;
     padding: 70px 0;
-    background-image: url(image/bg2.jpg);
-    background-size: cover;
-    background-position: center;  
 }
 
 .order h1 {
@@ -419,7 +405,7 @@ section .main_btn:hover i {
 }
 
 .order h1 span {
-    color: hsl(43, 89%, 57%);
+    color: hsl(108, 87%, 19%);
     margin-right: 15px;
     font-family: mv boli;
 }
@@ -428,7 +414,7 @@ section .main_btn:hover i {
     content: '';
     width: 100%;
     height: 2px;
-    background: hsl(43, 89%, 57%);
+    background: hsl(108, 87%, 19%);
     display: block;
     position: relative;
     bottom: 15px; 
@@ -453,10 +439,12 @@ section .main_btn:hover i {
 
 .order .order_main form .input p {
     line-height: 25px; 
+    border-radius: 10px;
 }
 
 .order .order_main form .input {
     margin: 5px;
+
 
 }
 
@@ -467,21 +455,22 @@ section .main_btn:hover i {
     border: 2px solid #cccccc;
     background: #eeeeee;
     outline: none;
-    border-radius: 3px;
+    border-radius: 10px;
 }
 
 .order .order_main form .input input:focus {
-    border: 2px solid hsl(43, 89%, 57%);
+    border: 2px solid hsl(108, 87%, 19%);
 }
 
 .order .order_main form .order_btn {
     padding: 10px 0;
-    background: hsl(43, 89%, 57%);
-    color: black;
+    background: hsl(108, 87%, 19%);
+    color: #fff;
     width: 40%;
     text-align: center;
     margin-top: 20px;
     text-decoration: none;
+    border-radius: 10px;
 }
 
 /*Footer*/
@@ -521,7 +510,7 @@ footer .footer_main .footer_tag i {
 }
 
 footer .footer_main .footer_tag i:hover {
-    color: hsl(43, 89%, 57%);
+    color: hsl(108, 87%, 19%);
 
 }
 
@@ -533,7 +522,7 @@ footer .end {
 }
 
 footer .end span {
-    color: hsl(43, 89%, 57%);
+    color: hsl(108, 87%, 19%);
     margin-left: 10px;
 }
 
@@ -547,7 +536,7 @@ footer .end span {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: hsl(43, 89%, 57%);
+    background: hsl(108, 87%, 19%);
     border-radius: 15px;
 }
 
